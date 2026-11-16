@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 591b9e34d9644b94387ae6d3217f3163, type: 3}
+  m_Name: Slash
+  m_EditorClassIdentifier: 
+  cardName: "\uCC38\uACA9"
+  cardDesc: 
+  cardIcon: {fileID: 47564613, guid: 65d2e30731b65644b9004a6f804a818a, type: 3}
+  cardType: 0
+  skillType: 0
+  skillEffect: {fileID: 5152866904412061508, guid: c128e285b1e7e3641b1682e14d382bd7, type: 3}
+  skillSfx: c0000_2001 SFX
+  cardEffects:
+  - rid: 2715521609168322565
+  atkRange: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 2715521609168322565
+      type: {class: CardDamageEffect, ns: , asm: Assembly-CSharp}
+      data:
+        effectDescription: 
+        skillDamage: 4
+        atkCount: 1

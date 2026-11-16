@@ -1,0 +1,47 @@
+BattleManager 흐름
+
+Call BattleManager
+- Data에서 반환해준 enemyName과 동일한 scriptsObjcet를 찾아
+- 그걸 enemyPrefab에 instantiate 하고 enemy에 저장을 해 -> 여기서는 prefab교체느낌
+- Init함수로 hp, str 가져옴
+- enemies 리스트에 넣음
+
+
+BattleStart
+- 리스트에 데이터가 남아있을 수 있으니 Clear
+- 이걸 스폰하게 데이터를 함수를 실행해서 data에 맞는 몬스터 prefab교체후 활성화하지않을까
+
+ playerTurnStart
+코스트를 초기화함
+EnemyCard(CardData card, Unit target)를 받아야해 이거는 Queue로 저장이 되어있을거야
+그 저장되어있는 Queue를 여기에서 호출하고 카드에 맞는 동작을 미리 설계하는거야
+플레이어는 드로우를 하고있으면 돼
+
+PlayerTurn
+CardUI로 필드에 존재하는 enemy리스트를 보내(enemies)
+그걸 받은 CardUI는 알아서 동작을 해줘
+만약 TurnEnd를 누르면 손패는 버리지않고 계속 들고있으며 그냥 턴만 enemy한테 넘어감
+
+EnemyTurn
+얘는 쉬운게 IEnumerator로 Dequeue하는 과정에 WaitForSecond(1f)로 카드 동작에 딜레이만 걸어주면 돼
+
+이제 이 동작을 어떻게 만드냐인데
+
+이미 playerTurnStart일 때 queue에는 cardData랑 Target이 포함된 Data가 들어있을거야
+
+내가 턴이 변경될 때 마다 노티파이를 보내니까 이벤트리스너로 받아서 그떄 함수를 동작시키면 됄거같은데? 근데 어떻게???
+
+일단 시전자도 랜덤인거같고 대상은 target을 받았지만 어차피 랜덤이라 의미가 없는거같아 list중 랜덤으로 사용하면 될거같고
+
+1. 대체 enemy의 카드정보는 어떻게 가져와야되는건가? cardSystem, CardData는 전부 player 기반으로 코딩이 되어있어 enemy가 사용하기 부적합한거같음 -> 하지만 원래 계획이 enemy랑 player랑 Unit으로 묶어서 Player한테 보내는것도 Unit으로 보내고 Enemy도 Unit으로 받는다고는 하는데 뭔지 모르겠음..
+
+2. 타겟도 랜덤 시전자도 랜덤인건가?
+
+3. 이벤트로 EnemyTurn인걸 알려주면 사용할 수 있는게 Enemy밖에 없어서 굳이 싶긴 한데 -> 이건 이벤트가 아니라 Action Method를 따로 만들어서 enemyturn에 while로 queue.Count만큼 반복하면 되니까..
+
+4. 스폰은 대체 어케한다는거야 그래서.. BattleManager에서 spawnEnemy를 호출을 하면 stage.Name에 보냄 -> 그럼 그 이름에 해당되는 enemyData(scriptObject)를 찾아 -> 정보를 prefab에 init해 -> 그리고 소환은? 좌표는 SpawnSystem에 있는걸 가져오랜
+
+0323
+한거 : rewardUI 만들기
+
+해야할거 : rewardUI 마무리하기, BattleManager 유닛의 사망 관리

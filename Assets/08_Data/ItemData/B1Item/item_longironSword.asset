@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cae6636a114eee43b76ee480cf6823d, type: 3}
+  m_Name: item_longironSword
+  m_EditorClassIdentifier: 
+  id: 0
+  itemName: "\uCCA0\uC81C \uB871 \uC18C\uB4DC"
+  description: 
+  itemMaxHp: 7
+  itemStr: 7
+  price: 250
+  icon: {fileID: -387154582, guid: 79cd6b35eef6c2947a7dfb33778e530b, type: 3}
+  equipPart: 0
+  itemGrade: 2
+  floorType: 1
+  sourceType: 1
+  itemType: 2

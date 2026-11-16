@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 591b9e34d9644b94387ae6d3217f3163, type: 3}
+  m_Name: Dark Echo
+  m_EditorClassIdentifier: 
+  cardName: "\uC8FD\uC74C\uC758 \uBA54\uC544\uB9AC"
+  cardDesc: 
+  cardIcon: {fileID: 47564613, guid: 65d2e30731b65644b9004a6f804a818a, type: 3}
+  cardType: 0
+  skillType: 0
+  skillEffect: {fileID: 8290359115699195188, guid: e7b0059f09cb15241973d434a922f01a, type: 3}
+  skillSfx: c0000_2005 SFX
+  cardEffects:
+  - rid: 7037131731756646411
+  atkRange: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 7037131731756646411
+      type: {class: CardDamageEffect, ns: , asm: Assembly-CSharp}
+      data:
+        effectDescription: 
+        skillDamage: 17
+        atkCount: 1

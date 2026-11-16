@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0913b94e0856ed84dbcd63912046c1cc, type: 3}
+  m_Name: c3000_2007
+  m_EditorClassIdentifier: 
+  cardName: "\uB9C8\uB098 \uBC29\uD328"
+  cardDesc: 
+  cardIcon: {fileID: 21300000, guid: 31f786c3a1b76c54c8b798ab4b5f88b6, type: 3}
+  cardType: 1
+  skillType: 0
+  skillEffect: {fileID: 2028918925722539701, guid: efc6c94c270ee2a4e9983eb20ccb423f, type: 3}
+  skillSfx: c3000_2007 SFX
+  cardEffects:
+  - rid: 3688858265343754240
+  cardGrade: 1
+  classType: 2
+  energyCost: 1
+  price: 30
+  skillRange: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 3688858265343754240
+      type: {class: ArmorEffect, ns: , asm: Assembly-CSharp}
+      data:
+        effectDescription: "\uC790\uC2E0\uC5D0\uAC8C \uB9C8\uB098\uB85C \uC774\uB8E8\uC5B4\uC9C4
+          \uBC29\uC5B4\uB9C9\uC744 \uC0DD\uC131\uD558\uC5EC {Armor} \uB9CC\uD07C
+          \uBC29\uC5B4\uB3C4\uB97C \uC62C\uB9BD\uB2C8\uB2E4.\n"
+        value: 9
+        skillRange: 0

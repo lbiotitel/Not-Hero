@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 573a3ac0aee83f04a971b813cf97f210, type: 3}
+  m_Name: DemonLord
+  m_EditorClassIdentifier: 
+  uName: DemonLord
+  sprite: {fileID: 967164539, guid: 1f0b719ab661aeb419d430415a54d2d3, type: 3}
+  animControl: {fileID: 9100000, guid: 18275a0ac0fedac4da8b9c4a7f481485, type: 2}
+  type: 1
+  minHp: 300
+  maxHp: 300
+  minAtk: 0
+  maxAtk: 0
+  baseDef: 0
+  pattern: {fileID: 11400000, guid: b6a8aca2e63a4ba44a131b77114358cf, type: 2}
+  conditions: []
+  enemyPrefab: {fileID: 0}

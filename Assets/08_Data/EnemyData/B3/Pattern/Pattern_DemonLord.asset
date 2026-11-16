@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32394a26044d8fb499de174bf77bc838, type: 3}
+  m_Name: Pattern_DemonLord
+  m_EditorClassIdentifier: 
+  skilles:
+  - weight: 70
+    skill: {fileID: 11400000, guid: 015cc6c36e431a746bc4d3556426b548, type: 2}
+  - weight: 30
+    skill: {fileID: 11400000, guid: 27341dbf48a486742a1cf911153441ac, type: 2}
+  - weight: 20
+    skill: {fileID: 11400000, guid: f1b373f1ef46e6741bb9327c0b93250b, type: 2}

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 573a3ac0aee83f04a971b813cf97f210, type: 3}
+  m_Name: Orc_Fighter
+  m_EditorClassIdentifier: 
+  uName: Orc_Fighter
+  sprite: {fileID: 1556664505, guid: 766278b53ced5954684da1a34bc06bc6, type: 3}
+  animControl: {fileID: 9100000, guid: 10c9090877c66de43b28fc3c9ec29062, type: 2}
+  type: 0
+  minHp: 20
+  maxHp: 25
+  minAtk: 0
+  maxAtk: 0
+  baseDef: 0
+  pattern: {fileID: 11400000, guid: a2a55a8a1d339674da64600004ad5ca3, type: 2}
+  conditions: []
+  enemyPrefab: {fileID: 0}

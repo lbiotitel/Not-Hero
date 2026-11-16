@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d2cecabc90139a438792f24842a0650, type: 3}
+  m_Name: Pattern_PritateCrew
+  m_EditorClassIdentifier: 
+  fixedIndex: 1
+  skills:
+  - {fileID: 11400000, guid: 2d057da6d9d39c24c8f4e155260e2e67, type: 2}
+  - {fileID: 11400000, guid: 86b397c213a2c2942b962cf6adc51445, type: 2}
+  - {fileID: 11400000, guid: 2bfba2a42a7e7874db367c087586cc7e, type: 2}

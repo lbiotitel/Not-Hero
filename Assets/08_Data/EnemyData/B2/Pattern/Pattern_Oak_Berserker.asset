@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32394a26044d8fb499de174bf77bc838, type: 3}
+  m_Name: Pattern_Oak_Berserker
+  m_EditorClassIdentifier: 
+  skilles:
+  - weight: 70
+    skill: {fileID: 11400000, guid: 7616fb44916a93a49bb2895c34a18d76, type: 2}
+  - weight: 20
+    skill: {fileID: 11400000, guid: beb82d85b3e5f944cbe33ed43734532a, type: 2}
+  - weight: 10
+    skill: {fileID: 11400000, guid: e4e1380f6b4972a4aad780363deaa13b, type: 2}

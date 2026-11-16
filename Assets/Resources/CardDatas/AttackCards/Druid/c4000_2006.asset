@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c37e4e991d097fb4aaf9ece429f7daaa, type: 3}
+  m_Name: c4000_2006
+  m_EditorClassIdentifier: 
+  cardName: "\uAE68\uBB3C\uAE30"
+  cardDesc: 
+  cardIcon: {fileID: 21300000, guid: f5742794c03d74843a34c3f05df05d9b, type: 3}
+  cardType: 0
+  skillType: 0
+  skillEffect: {fileID: 2054454546943616397, guid: bd692a61624a7074582164707883154d, type: 3}
+  skillSfx: c4000_2006 SFX
+  cardEffects:
+  - rid: 9023653544198930435
+  cardGrade: 2
+  classType: 3
+  energyCost: 2
+  price: 105
+  atkRange: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 9023653544198930435
+      type: {class: CardDamageEffect, ns: , asm: Assembly-CSharp}
+      data:
+        effectDescription: "\uB291\uB300\uB85C \uBCC0\uC2E0\uD574 \uC801\uC5D0\uAC8C
+          \uD53C\uD574\uB97C {Damage} \uB9CC\uD07C {AtkCount}\uBC88 \uC90D\uB2C8\uB2E4."
+        skillDamage: 7
+        atkCount: 2

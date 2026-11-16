@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8aa62a43737852542932fd9fe320a916, type: 3}
+  m_Name: Druid
+  m_EditorClassIdentifier: 
+  uName: Druid
+  sprite: {fileID: -1948106177, guid: efb323ff4ae25a5468684dccd9355f5f, type: 3}
+  animControl: {fileID: 9100000, guid: feae5b4d583bc1545bfea696e7ab2e6c, type: 2}
+  classData: {fileID: 11400000, guid: edd1055d91994e64295c4a3316aaeac2, type: 2}
+  baseDef: 0
+  startCardName:
+  - c4000_2002
+  - c4000_2003
+  - c4000_2005

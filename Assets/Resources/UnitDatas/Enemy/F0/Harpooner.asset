@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 573a3ac0aee83f04a971b813cf97f210, type: 3}
+  m_Name: Harpooner
+  m_EditorClassIdentifier: 
+  uName: Harpooner
+  sprite: {fileID: -2122259080, guid: 8acaaae48e58bb344a06f07954f3727c, type: 3}
+  animControl: {fileID: 9100000, guid: 5f312cb4b645a924591daf247f13a82d, type: 2}
+  type: 0
+  minHp: 30
+  maxHp: 50
+  minAtk: 1
+  maxAtk: 3
+  baseDef: 0
+  pattern: {fileID: 11400000, guid: 35dc45617e74c164f89f5eef85bb9d45, type: 2}
+  conditions: []
+  enemyPrefab: {fileID: 0}

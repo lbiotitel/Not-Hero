@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fbaf3163241ad5448bc1c955aa98a79, type: 3}
+  m_Name: B3
+  m_EditorClassIdentifier: 
+  dropItems:
+  - item: {fileID: 11400000, guid: 538fd1582426ce242b3ef90d49df8286, type: 2}
+    chance: 0
+  - item: {fileID: 11400000, guid: 538fd1582426ce242b3ef90d49df8286, type: 2}
+    chance: 0
+  - item: {fileID: 11400000, guid: 89e7adb9b93783e449d462b7c7b57ab5, type: 2}
+    chance: 0
+  - item: {fileID: 11400000, guid: 54d135f8e31928442a96d3f5f4098ae3, type: 2}
+    chance: 0
+  - item: {fileID: 11400000, guid: f08e9a4f66f1e3147b654dd766d751da, type: 2}
+    chance: 0
+  - item: {fileID: 11400000, guid: 2f63a3ab62b060347a014f90908d08e5, type: 2}
+    chance: 0
+  - item: {fileID: 11400000, guid: 2f63a3ab62b060347a014f90908d08e5, type: 2}
+    chance: 0
+  - item: {fileID: 11400000, guid: bc82fc82dafe9394ba0c80444de5620a, type: 2}
+    chance: 0
+  regionName: 3

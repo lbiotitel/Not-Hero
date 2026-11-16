@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32394a26044d8fb499de174bf77bc838, type: 3}
+  m_Name: Pattern_LowDemon
+  m_EditorClassIdentifier: 
+  skilles:
+  - weight: 50
+    skill: {fileID: 11400000, guid: 4a219f655f3f8224f8d21725e7bb68ba, type: 2}
+  - weight: 25
+    skill: {fileID: 11400000, guid: 2bfba2a42a7e7874db367c087586cc7e, type: 2}
+  - weight: 25
+    skill: {fileID: 11400000, guid: 07b8bbbd3f03e574e9a6b349852b91e6, type: 2}

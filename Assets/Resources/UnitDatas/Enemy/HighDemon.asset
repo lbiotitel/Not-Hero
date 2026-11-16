@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 573a3ac0aee83f04a971b813cf97f210, type: 3}
+  m_Name: HighDemon
+  m_EditorClassIdentifier: 
+  uName: HighDemon
+  sprite: {fileID: 363135707, guid: 51af5b8c9e8002a47b12210e7be52786, type: 3}
+  animControl: {fileID: 9100000, guid: 965404c8d715ceb4fb9433d72931c2f4, type: 2}
+  type: 0
+  minHp: 170
+  maxHp: 170
+  minAtk: 0
+  maxAtk: 0
+  baseDef: 0
+  pattern: {fileID: 11400000, guid: b784d7ed1dbaf5145b2e97a41c6f04a8, type: 2}
+  conditions: []
+  enemyPrefab: {fileID: 0}

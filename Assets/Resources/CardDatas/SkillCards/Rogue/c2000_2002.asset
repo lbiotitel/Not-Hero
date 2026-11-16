@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0913b94e0856ed84dbcd63912046c1cc, type: 3}
+  m_Name: c2000_2002
+  m_EditorClassIdentifier: 
+  cardName: "\uAC15\uD0C8"
+  cardDesc: '
+
+'
+  cardIcon: {fileID: 21300000, guid: b9982cc870963924b859d0c0638f80ff, type: 3}
+  cardType: 1
+  skillType: 0
+  skillEffect: {fileID: 1747356442223674147, guid: b9aa65a9fd825b2468096df4f952e7af, type: 3}
+  skillSfx: c2000_2002 SFX
+  cardEffects:
+  - rid: 3688858262269067265
+  cardGrade: 2
+  classType: 1
+  energyCost: 1
+  price: 70
+  skillRange: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 3688858262269067265
+      type: {class: DrawEffect, ns: , asm: Assembly-CSharp}
+      data:
+        effectDescription: "{DrawCount} \uC7A5 \uCE74\uB4DC\uB97C \uBF51\uC2B5\uB2C8\uB2E4."
+        drawCount: 2

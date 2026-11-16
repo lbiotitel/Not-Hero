@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: d300185abe7048942b27609303a679b2
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 286454
+  packageName: Retro Arsenal
+  packageVersion: 1.0.2
+  assetPath: Assets/Retro Arsenal/Prefabs/Interactive/Mining/MiningHit.prefab
+  uploadId: 680784

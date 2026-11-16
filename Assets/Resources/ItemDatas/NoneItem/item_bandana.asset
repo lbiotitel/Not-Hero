@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cae6636a114eee43b76ee480cf6823d, type: 3}
+  m_Name: item_bandana
+  m_EditorClassIdentifier: 
+  id: 0
+  itemName: "\uC57D\uD0C8\uC790\uC758 \uBC18\uB2E4\uB098"
+  description: 
+  itemMaxHp: 0
+  itemStr: 5
+  price: 130
+  icon: {fileID: 1788405793, guid: 79cd6b35eef6c2947a7dfb33778e530b, type: 3}
+  equipPart: 1
+  itemGrade: 3
+  floorType: 1
+  sourceType: 2
+  itemType: 2

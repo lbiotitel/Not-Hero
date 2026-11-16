@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0913b94e0856ed84dbcd63912046c1cc, type: 3}
+  m_Name: c2000_2004
+  m_EditorClassIdentifier: 
+  cardName: "\uD5E4\uC774\uC2A4\uD2B8"
+  cardDesc: '
+
+'
+  cardIcon: {fileID: 21300000, guid: f8d555a596c1ec340aa16f40d7ac5910, type: 3}
+  cardType: 1
+  skillType: 0
+  skillEffect: {fileID: 2852772542431262920, guid: 1c89c690cef1cc747951b91b2ecc6941, type: 3}
+  skillSfx: c2000_2004 SFX
+  cardEffects:
+  - rid: 1331546062890467329
+  cardGrade: 3
+  classType: 1
+  energyCost: 0
+  price: 120
+  skillRange: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 1331546062890467329
+      type: {class: EnergyCostEffect, ns: , asm: Assembly-CSharp}
+      data:
+        effectDescription: "\uCF54\uC2A4\uD2B8\uB97C {Cost} \uCDA9\uC804\uD569\uB2C8\uB2E4."
+        value: 2

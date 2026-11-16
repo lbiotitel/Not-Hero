@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 573a3ac0aee83f04a971b813cf97f210, type: 3}
+  m_Name: Brute
+  m_EditorClassIdentifier: 
+  uName: Brute
+  sprite: {fileID: -1304272414, guid: 0638c6c59063b22488dbf11be7df5964, type: 3}
+  animControl: {fileID: 9100000, guid: e3f2d587394c36544a4fb63f2447ff8c, type: 2}
+  type: 0
+  minHp: 30
+  maxHp: 50
+  minAtk: 1
+  maxAtk: 3
+  baseDef: 0
+  pattern: {fileID: 11400000, guid: c5c8f368be4605c4796ccab12f6f546f, type: 2}
+  conditions: []
+  enemyPrefab: {fileID: 0}

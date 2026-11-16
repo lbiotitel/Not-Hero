@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f9819e41ae80a54db78b9d8b6d423da, type: 3}
+  m_Name: Binding
+  m_EditorClassIdentifier: 
+  cardName: "\uBC14\uC778\uB529"
+  cardDesc: 
+  cardIcon: {fileID: -1606182498, guid: 65d2e30731b65644b9004a6f804a818a, type: 3}
+  cardType: 1
+  skillType: 0
+  skillEffect: {fileID: 0}
+  skillSfx: 
+  cardEffects: []
+  skillRange: 0
+  references:
+    version: 2
+    RefIds: []

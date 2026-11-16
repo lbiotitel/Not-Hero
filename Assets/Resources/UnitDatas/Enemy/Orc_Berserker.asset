@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 573a3ac0aee83f04a971b813cf97f210, type: 3}
+  m_Name: Orc_Berserker
+  m_EditorClassIdentifier: 
+  uName: Orc_Berserker
+  sprite: {fileID: 1854540167, guid: 340e70d687f0a3d4c9d5fc5c5b4dd867, type: 3}
+  animControl: {fileID: 9100000, guid: 004446ad14c444a48a794ffcfb97d02d, type: 2}
+  type: 0
+  minHp: 76
+  maxHp: 80
+  minAtk: 0
+  maxAtk: 0
+  baseDef: 0
+  pattern: {fileID: 11400000, guid: 1dfaff92ce35bd44d950ceffa790cc86, type: 2}
+  conditions: []
+  enemyPrefab: {fileID: 0}

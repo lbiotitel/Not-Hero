@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 573a3ac0aee83f04a971b813cf97f210, type: 3}
+  m_Name: SkeletonArcher
+  m_EditorClassIdentifier: 
+  uName: SkeletonArcher
+  sprite: {fileID: 285423612, guid: f1fc4526efcc0e44985dd76456410cee, type: 3}
+  animControl: {fileID: 9100000, guid: ba37cc98ab17ccd4c89c79cc88c3c967, type: 2}
+  type: 0
+  minHp: 40
+  maxHp: 50
+  minAtk: 1
+  maxAtk: 3
+  baseDef: 0
+  pattern: {fileID: 11400000, guid: 3bc4589918fb28240a169b27f95152a7, type: 2}
+  conditions: []
+  enemyPrefab: {fileID: 0}

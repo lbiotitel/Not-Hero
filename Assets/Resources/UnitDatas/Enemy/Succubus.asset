@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 573a3ac0aee83f04a971b813cf97f210, type: 3}
+  m_Name: Succubus
+  m_EditorClassIdentifier: 
+  uName: Succubus
+  sprite: {fileID: 1557780475, guid: 5f687ba5677c0bd43931250db0fce98d, type: 3}
+  animControl: {fileID: 9100000, guid: 2b1888b473ac03b43a776df2c8745b36, type: 2}
+  type: 0
+  minHp: 90
+  maxHp: 95
+  minAtk: 0
+  maxAtk: 0
+  baseDef: 0
+  pattern: {fileID: 11400000, guid: 85d2a2ff98897d04988a0e22a1d1037e, type: 2}
+  conditions: []
+  enemyPrefab: {fileID: 0}

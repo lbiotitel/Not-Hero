@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 573a3ac0aee83f04a971b813cf97f210, type: 3}
+  m_Name: Lich
+  m_EditorClassIdentifier: 
+  uName: Lich
+  sprite: {fileID: -1180915430, guid: cf2abd30b5d3c9546bcbe82030f39f15, type: 3}
+  animControl: {fileID: 9100000, guid: 1b72fc457633ed64cad107330925f5f4, type: 2}
+  type: 1
+  minHp: 250
+  maxHp: 250
+  minAtk: 5
+  maxAtk: 7
+  baseDef: 0
+  pattern: {fileID: 11400000, guid: 4412b09087851b346b854d8e4dfcc14f, type: 2}
+  conditions: []
+  enemyPrefab: {fileID: 0}

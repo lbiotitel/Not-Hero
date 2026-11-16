@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c37e4e991d097fb4aaf9ece429f7daaa, type: 3}
+  m_Name: c6000_2003
+  m_EditorClassIdentifier: 
+  cardName: "\uAD11\uD718"
+  cardDesc: 
+  cardIcon: {fileID: 21300000, guid: bc7c3cb2fb9f94b46a459bd4ccbde739, type: 3}
+  cardType: 0
+  skillType: 0
+  skillEffect: {fileID: 5941125931689825678, guid: dadf42b7901891141a650102536692ad, type: 3}
+  skillSfx: c6000_2003 SFX
+  cardEffects:
+  - rid: 2925704239923068929
+  cardGrade: 1
+  classType: 5
+  energyCost: 1
+  price: 50
+  atkRange: 1
+  references:
+    version: 2
+    RefIds:
+    - rid: 2925704239923068929
+      type: {class: CardDamageEffect, ns: , asm: Assembly-CSharp}
+      data:
+        effectDescription: "\uD53C\uD574\uB97C {Damage} \uC90D\uB2C8\uB2E4."
+        skillDamage: 1
+        atkCount: 1
