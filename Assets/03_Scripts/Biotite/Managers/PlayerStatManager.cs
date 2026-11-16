@@ -4,7 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 
-//¸ğµç ÇÃ·¹ÀÌ¾îÀÇ ÀÚ»êÀ» °ü¸® ÇÕ´Ï´Ù.
+//ëª¨ë“  í”Œë ˆì´ì–´ì˜ ìì‚°ì„ ê´€ë¦¬ í•©ë‹ˆë‹¤.
 public class PlayerStatManager : MonoBehaviour
 {
     [SerializeField] private RewardResult rewardResult;

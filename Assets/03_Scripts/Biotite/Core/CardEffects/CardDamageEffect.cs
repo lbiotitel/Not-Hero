@@ -60,7 +60,7 @@ public class CardDamageEffect : CardEffect
     {
         if (caster == null)
         {
-            Debug.LogError("Á¦´ë·Î µÈ cater °¡ ¾Æ´Õ´Ï´Ù");
+            Debug.LogError("ì œëŒ€ë¡œ ëœ cater ê°€ ì•„ë‹™ë‹ˆë‹¤");
             return string.Empty;
         }
 

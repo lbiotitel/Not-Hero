@@ -15,7 +15,7 @@ public class PoolingManager : MonoBehaviour
 
 
 
-    //¿ÀºêÁ§Æ®¸¦ °¡Á®¿É´Ï´Ù. 
+    //ì˜¤ë¸Œì íŠ¸ë¥¼ ê°€ì ¸ì˜µë‹ˆë‹¤. 
     public T GetObject<T>(GameObject goPrefab,Vector3 position) where T : Component
     {
         GameObject res = GetObject(goPrefab, position);
@@ -24,17 +24,17 @@ public class PoolingManager : MonoBehaviour
             return component;
         }
 
-        Debug.LogError("ÇØ´çµÇ´Â ÄÄÆ÷³ÍÆ®°¡ ¾ø½À´Ï´Ù.");
+        Debug.LogError("í•´ë‹¹ë˜ëŠ” ì»´í¬ë„ŒíŠ¸ê°€ ì—†ìŠµë‹ˆë‹¤.");
         return null;
     }
 
 
-    //¿ÀºêÁ§Æ®¸¦ °¡Á®¿É´Ï´Ù. ¾ø´Ù¸é »õ·Î¸¸µé°í Ç®¸µ ÇÕ´Ï´Ù.
+    //ì˜¤ë¸Œì íŠ¸ë¥¼ ê°€ì ¸ì˜µë‹ˆë‹¤. ì—†ë‹¤ë©´ ìƒˆë¡œë§Œë“¤ê³  í’€ë§ í•©ë‹ˆë‹¤.
     public GameObject GetObject(GameObject goPrefab, Vector3 position)
     {
         if (!goPrefab.TryGetComponent(out IPoolingObject _))
         {
-            Debug.LogError($"Ç®¸µÀÌ Çã¿ëµÇÁö ¾ÊÀº ÇÁ¸®ÆÕ ÀÔ´Ï´Ù. Ç®¸µÀ» ÇÒ·Á¸é IPoolingObject¸¦ ºÙÀÌ¼¼¿ä");
+            Debug.LogError($"í’€ë§ì´ í—ˆìš©ë˜ì§€ ì•Šì€ í”„ë¦¬íŒ¹ ì…ë‹ˆë‹¤. í’€ë§ì„ í• ë ¤ë©´ IPoolingObjectë¥¼ ë¶™ì´ì„¸ìš”");
             return null;
         }
 
@@ -66,7 +66,7 @@ public class PoolingManager : MonoBehaviour
         return res;
     }
 
-    //ÀÚ½ÅÀÌ CloneµÈ ¿øº» ÇÁ¸®ÆÕÀ» Ã£½À´Ï´Ù.
+    //ìì‹ ì´ Cloneëœ ì›ë³¸ í”„ë¦¬íŒ¹ì„ ì°¾ìŠµë‹ˆë‹¤.
     private GameObject GetObjectOriginPrefab(GameObject go)
     {
         if (go.TryGetComponent(out IPoolingObject poolingObject))
@@ -78,7 +78,7 @@ public class PoolingManager : MonoBehaviour
     }
 
 
-    //Ç®¸µµÈ ¿ÀºêÁ§Æ®µéÀ» ´Ù½Ã ÀúÀåÇÕ´Ï´Ù.
+    //í’€ë§ëœ ì˜¤ë¸Œì íŠ¸ë“¤ì„ ë‹¤ì‹œ ì €ì¥í•©ë‹ˆë‹¤.
     public void ReturnObject(GameObject returnObject)
     {
         GameObject prefabKey = GetObjectOriginPrefab(returnObject);
@@ -93,12 +93,12 @@ public class PoolingManager : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Ç®¸µ µÇÁö ¾ÊÀº ¿ÀºêÁ§Æ®°¡ Return µÇ¾ú½À´Ï´Ù.");
+            Debug.LogError("í’€ë§ ë˜ì§€ ì•Šì€ ì˜¤ë¸Œì íŠ¸ê°€ Return ë˜ì—ˆìŠµë‹ˆë‹¤.");
         }
     }
         
 
-    //Ç®¿¡ ÀÖ´Â ¿ÀºêÁ§Æ®¿Í ¿ùµå¿¡ ÀÖ´Â Ç®¸µ ÇÏ´Â ¿ÀºêÁ§Æ®¸¦ ¸ğµÎ ÆÄ±«ÇÕ´Ï´Ù.
+    //í’€ì— ìˆëŠ” ì˜¤ë¸Œì íŠ¸ì™€ ì›”ë“œì— ìˆëŠ” í’€ë§ í•˜ëŠ” ì˜¤ë¸Œì íŠ¸ë¥¼ ëª¨ë‘ íŒŒê´´í•©ë‹ˆë‹¤.
     private void ClearPools()
     {
         var worldObjects = Object.FindObjectsByType<MonoBehaviour>(FindObjectsSortMode.None);

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//ÆÄÆ¼Å¬¿¡ ÀÌ ÄÄÆ÷³ÍÆ®¸¦ ºÙ¿©¼­ Ç®¸µÀ» ÇÕ´Ï´Ù.
+//íŒŒí‹°í´ì— ì´ ì»´í¬ë„ŒíŠ¸ë¥¼ ë¶™ì—¬ì„œ í’€ë§ì„ í•©ë‹ˆë‹¤.
 
 public class PoolingParticle : MonoBehaviour,IPoolingObject
 {

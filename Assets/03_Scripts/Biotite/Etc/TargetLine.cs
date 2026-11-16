@@ -4,7 +4,7 @@ using UnityEngine;
 
 
 
-//ÀûÀÌ ¾Æ±ºÀ» Å¸°ÙÆÃ ÇÏ´Â °î¼±À» ±×¸³´Ï´Ù
+//ì ì´ ì•„êµ°ì„ íƒ€ê²ŸíŒ… í•˜ëŠ” ê³¡ì„ ì„ ê·¸ë¦½ë‹ˆë‹¤
 public class TargetLine : MonoBehaviour
 {
     [SerializeField] private int resolution = 20; 

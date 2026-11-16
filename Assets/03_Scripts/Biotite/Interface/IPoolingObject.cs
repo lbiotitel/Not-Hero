@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//Ç®¸µÇÏ´Â ¿ÀºêÁ§Æ®µéÀº ÀÌ ÀÎÅÍÆäÀÌ½º¸¦ ´Ù »ó¼Ó ¹Ş½À´Ï´Ù.
+//í’€ë§í•˜ëŠ” ì˜¤ë¸Œì íŠ¸ë“¤ì€ ì´ ì¸í„°í˜ì´ìŠ¤ë¥¼ ë‹¤ ìƒì† ë°›ìŠµë‹ˆë‹¤.
 public interface IPoolingObject 
 {
     public GameObject OriginPrefab { get; set; }

@@ -6,7 +6,7 @@ using UnityEngine;
 
 
 
-// ¸Ê ·£´ı»ı¼º ½ºÅ©¸³Æ®
+// ë§µ ëœë¤ìƒì„± ìŠ¤í¬ë¦½íŠ¸
 public class MapGeneratorSystem : MonoBehaviour
 {
     [Serializable]
@@ -16,10 +16,10 @@ public class MapGeneratorSystem : MonoBehaviour
         public int weight;
     }
 
-    //°¡ÁßÄ¡ ·£´ı
+    //ê°€ì¤‘ì¹˜ ëœë¤
     [Header("Node Weight")]
     [SerializeField] private List<MapNodeWeight> mapNodeWeights = new List<MapNodeWeight>();
-    private int totalWeight; //°¡ÁßÄ¡ ÇÕ
+    private int totalWeight; //ê°€ì¤‘ì¹˜ í•©
 
     [Header("System Properties")]
     [SerializeField] private int mapHeight;
@@ -27,13 +27,13 @@ public class MapGeneratorSystem : MonoBehaviour
     [SerializeField] private int startNodeCount;
 
     private MapNode[,] map;
-    private List<MapNode> startNodeList = new List<MapNode>(); //¸Ç Ã³À½ ¹èÆ² ³ëµå
-    public MapNode StartNode { get; private set; } = null; //½ÃÀÛ ³ëµå
+    private List<MapNode> startNodeList = new List<MapNode>(); //ë§¨ ì²˜ìŒ ë°°í‹€ ë…¸ë“œ
+    public MapNode StartNode { get; private set; } = null; //ì‹œì‘ ë…¸ë“œ
 
 
 
 
-    //¸Ê »ı¼º·ÎÁ÷À» ¼øÂ÷·Î ½ÇÇà
+    //ë§µ ìƒì„±ë¡œì§ì„ ìˆœì°¨ë¡œ ì‹¤í–‰
     public MapNode[,] GenerateMap()
     {
         map = new MapNode[mapHeight, mapWidth];
@@ -52,7 +52,7 @@ public class MapGeneratorSystem : MonoBehaviour
         return map;
     }
 
-    //°¡ÁßÄ¡ °è»ê
+    //ê°€ì¤‘ì¹˜ ê³„ì‚°
     private void CalcTotalWeight()
     {
         totalWeight = 0;
@@ -61,7 +61,7 @@ public class MapGeneratorSystem : MonoBehaviour
     }
 
 
-    //±æ ¿¬°á
+    //ê¸¸ ì—°ê²°
     private void GeneratePath()
     {
         foreach (var node in startNodeList)
@@ -75,7 +75,7 @@ public class MapGeneratorSystem : MonoBehaviour
     }
 
 
-    //¿¬°á
+    //ì—°ê²°
     private int SetUpConnection(int y, int x)
     {
         MapNode nextRoom = null;
@@ -92,7 +92,7 @@ public class MapGeneratorSystem : MonoBehaviour
         return nextRoom.mapPos.x;
     }
 
-    //±³Â÷ ³ëµå Ã¼Å©
+    //êµì°¨ ë…¸ë“œ ì²´í¬
     private bool IsCrossExistingPath(int y, int x, MapNode room)
     {
         if (room == null)
@@ -101,7 +101,7 @@ public class MapGeneratorSystem : MonoBehaviour
         MapNode leftRoom = null;
         MapNode rightRoom = null;
         
-        //¹üÀ§ Ã¼Å©
+        //ë²”ìœ„ ì²´í¬
         if (x > 0) leftRoom = map[y, x - 1];
         if (x < mapWidth - 1) rightRoom = map[y, x + 1];
 
@@ -128,7 +128,7 @@ public class MapGeneratorSystem : MonoBehaviour
     }
 
 
-    //¸ğµç ³ëµå ÃÊ±âÈ­
+    //ëª¨ë“  ë…¸ë“œ ì´ˆê¸°í™”
     private void InitAllMapNode()
     {
         for (int y = 0; y < mapHeight; y++)
@@ -144,7 +144,7 @@ public class MapGeneratorSystem : MonoBehaviour
     }
 
 
-    //Ã³À½ ½ÃÀÛ ºÎºĞ ·£´ıÀ¸·Î ¼±ÅÃ
+    //ì²˜ìŒ ì‹œì‘ ë¶€ë¶„ ëœë¤ìœ¼ë¡œ ì„ íƒ
     private void SelectStartNode()
     {
         HashSet<int> sel = new HashSet<int>();
@@ -167,7 +167,7 @@ public class MapGeneratorSystem : MonoBehaviour
     }
 
 
-    //º¸½º·ë ¼³Á¤
+    //ë³´ìŠ¤ë£¸ ì„¤ì •
     private void InitBossMapNode()
     {
         int mid = mapWidth / 2;
@@ -182,7 +182,7 @@ public class MapGeneratorSystem : MonoBehaviour
         }
     }
 
-    //Áß°£¿¡ º¸¹°¹æ »ı¼º
+    //ì¤‘ê°„ì— ë³´ë¬¼ë°© ìƒì„±
     private void InitTreasureNode()
     {
         int mid = mapHeight / 2;
@@ -209,7 +209,7 @@ public class MapGeneratorSystem : MonoBehaviour
 
 
 
-    //ºñ¾î ÀÖ´Â ³ëµåµéÀÇ Å¸ÀÔ ¼³Á¤
+    //ë¹„ì–´ ìˆëŠ” ë…¸ë“œë“¤ì˜ íƒ€ì… ì„¤ì •
     private void InitAllMapNodeType()
     {
         for (int y = 0; y < mapHeight; y++)
@@ -226,7 +226,7 @@ public class MapGeneratorSystem : MonoBehaviour
     }
 
 
-    //°¡ÁßÄ¡ ·£´ıÀ¸·Î Å¸ÀÔ°¡Á®¿À±â
+    //ê°€ì¤‘ì¹˜ ëœë¤ìœ¼ë¡œ íƒ€ì…ê°€ì ¸ì˜¤ê¸°
     private EMapNodeType GetRandomMapNodeTypeByWeight()
     {
         int randomType = UnityEngine.Random.Range(0, totalWeight);

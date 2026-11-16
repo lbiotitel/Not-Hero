@@ -25,7 +25,7 @@ public class UIManager : MonoBehaviour
 
 
 
-    //�ؿ� �ִ� ui�� init
+    //하위에 있는 UI들을 초기화
     public void Init()
     {
         RestUI.Init();

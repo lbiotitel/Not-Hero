@@ -2,12 +2,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-//¸ğµç ÀÌº¥Æ®¸¦ °ü¸®ÇÏ´Â Å¬·¡½º
+//ëª¨ë“  ì´ë²¤íŠ¸ë¥¼ ê´€ë¦¬í•˜ëŠ” í´ë˜ìŠ¤
 public class EventManager : MonoBehaviour
 {
     private Dictionary<EEventType, List<IEventListener>> eventDict = new Dictionary<EEventType, List<IEventListener>>();
 
-    //ÀÌº¥Æ® µî·Ï
+    //ì´ë²¤íŠ¸ ë“±ë¡
     public void AddListener(EEventType eventType, IEventListener eventListener)
     {
         if (!eventDict.ContainsKey(eventType))
@@ -19,7 +19,7 @@ public class EventManager : MonoBehaviour
     }
 
 
-    //ÀÌº¥Æ® ÇØÁ¦
+    //ì´ë²¤íŠ¸ í•´ì œ
     public void RemoveListener(EEventType eventType, IEventListener eventListener)
     {
         if (eventDict.ContainsKey(eventType))
@@ -28,7 +28,7 @@ public class EventManager : MonoBehaviour
         }
     }
 
-    //ÀÌº¥Æ® ¾Ë¸²
+    //ì´ë²¤íŠ¸ ì•Œë¦¼
     public void NotifyEvent(EEventType eventType, object sender, object param = null)
     {
         if (eventDict.ContainsKey(eventType))

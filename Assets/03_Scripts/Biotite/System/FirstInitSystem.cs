@@ -21,7 +21,7 @@ public class FirstInitSystem : MonoBehaviour
         ShowClassBodyRender();
     }
 
-    //¹èÆ²¸Å´ÏÀú¿¡ »ÌÀº Å¬·¡½ºÀÇ ÀÌ¸§À» ³Ñ°Ü ¼¼ÆÃÇÏ°Ô ÇÕ´Ï´Ù.
+    //ë°°í‹€ë§¤ë‹ˆì €ì— ë½‘ì€ í´ë˜ìŠ¤ì˜ ì´ë¦„ì„ ë„˜ê²¨ ì„¸íŒ…í•˜ê²Œ í•©ë‹ˆë‹¤.
     public void SetHeroObjects()
     {
         if (testClassList.Count > 0)
@@ -35,7 +35,7 @@ public class FirstInitSystem : MonoBehaviour
 
     private void ShowClassBodyRender()
     {
-        //»ÌÀº µ¥ÀÌÅÍµéÀ» °¡Á®¿Í¼­ renderer¿¡ ·»´õ¸µ ÇÕ´Ï´Ù
+        //ë½‘ì€ ë°ì´í„°ë“¤ì„ ê°€ì ¸ì™€ì„œ rendererì— ë Œë”ë§ í•©ë‹ˆë‹¤
         int rendererIndex = 0;
         foreach (var className in selectedClasses)
         {
@@ -45,7 +45,7 @@ public class FirstInitSystem : MonoBehaviour
         }
     }
 
-    //·£´ıÇÑ Å¬·¡½ºÀÇ ¸ñ·ÏÀ» Áßº¹ ¾øÀÌ »Ì½À´Ï´Ù.
+    //ëœë¤í•œ í´ë˜ìŠ¤ì˜ ëª©ë¡ì„ ì¤‘ë³µ ì—†ì´ ë½‘ìŠµë‹ˆë‹¤.
     private List<string> GetRandomClassList()
     { 
         HashSet<string> selectedClasses = new HashSet<string>();

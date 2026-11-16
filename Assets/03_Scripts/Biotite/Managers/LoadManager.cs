@@ -38,11 +38,11 @@ public class LoadManager : Singleton<LoadManager>
 
         while (op.progress < 0.9f)
         {
-            loadingProgressText.text = $"·Îµå Áß {op.progress * 100f:F0}%";
+            loadingProgressText.text = $"ë¡œë“œ ì¤‘ {op.progress * 100f:F0}%";
             yield return null;
         }
 
-        loadingProgressText.text = "·Îµå ¿Ï·á! 100%";
+        loadingProgressText.text = "ë¡œë“œ ì™„ë£Œ! 100%";
 
         yield return new WaitForSeconds(1f);
 

@@ -29,9 +29,9 @@ public class ShopUI : MonoBehaviour
     {
         exitButton.onClick.AddListener(HideUI);
 
-        itemDataList = Managers.Data.GetDataList<ItemData>(); //�̸� ĳ��
+        itemDataList = Managers.Data.GetDataList<ItemData>(); //미리 캐싱
 
-        //�� ī�� ����
+        //상점 카드 생성
         InitCardShopUI(generateCardCount);
         InitEquipmentShopUI(generateEquipmentCount);
     }
@@ -107,7 +107,7 @@ public class ShopUI : MonoBehaviour
 
     private void SellEquipment(EquipmentShopUI equipmentShopUI)
     {
-        //��� ������� Ȯ�� �� ��
+        //골드가 충분한지 확인 후 구매
         ItemData itemData = equipmentShopUI.ItemData;
         int price = itemData.price;
         if (Managers.PlayerStat.IsEnoughGold(price))
@@ -117,7 +117,7 @@ public class ShopUI : MonoBehaviour
             Managers.Sound.PlaySound(Defines.SoundKey.SHOP_SELL_SFX, false, ESoundType.Sfx);
             equipmentShopUI.Sell();
         }
-        //�� ī�� ��Ͽ� ���
+        //구매 후 상점 주인 대사 변경
         ShopOwnerRandomDialogue();
     }
 

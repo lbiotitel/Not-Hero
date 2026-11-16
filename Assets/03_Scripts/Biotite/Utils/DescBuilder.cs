@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-//½ºÅ³ ¼³¸íÀÌ³ª ¿©·¯ ¹®ÀÚ¿­À» ¸¸µå´Â Å¬·¡½º ÀÔ´Ï´Ù
+//ìŠ¤í‚¬ ì„¤ëª…ì´ë‚˜ ì—¬ëŸ¬ ë¬¸ìì—´ì„ ë§Œë“œëŠ” í´ë˜ìŠ¤ ì…ë‹ˆë‹¤
 public class DescBuilder : MonoBehaviour
 {
 
@@ -18,22 +18,22 @@ public class DescBuilder : MonoBehaviour
 
     public static readonly Dictionary<EDescKey, string> descriptionKeys = new Dictionary<EDescKey, string>()
     {
-        { EDescKey.Damage ,"{Damage}" }, //µ¥¹ÌÁö
-        { EDescKey.AtkCount,"{AtkCount}" }, //°ø°İ È½¼ö
-        { EDescKey.Armor, "{Armor}" }, //¹æ¾îµµ
-        { EDescKey.DrawCount, "{DrawCount}" }, //µå·Î¿ì ¼ö
-        { EDescKey.Heal, "{Heal}" }, //µå·Î¿ì ¼ö
-        { EDescKey.Cost, "{Cost}" }, //ÄÚ½ºÆ® 
+        { EDescKey.Damage ,"{Damage}" }, //ë°ë¯¸ì§€
+        { EDescKey.AtkCount,"{AtkCount}" }, //ê³µê²© íšŸìˆ˜
+        { EDescKey.Armor, "{Armor}" }, //ë°©ì–´ë„
+        { EDescKey.DrawCount, "{DrawCount}" }, //ë“œë¡œìš° ìˆ˜
+        { EDescKey.Heal, "{Heal}" }, //ë“œë¡œìš° ìˆ˜
+        { EDescKey.Cost, "{Cost}" }, //ì½”ìŠ¤íŠ¸ 
     };
 
     public static readonly Dictionary<EDescKey, string> descriptionColor = new Dictionary<EDescKey, string>()
     {
-        { EDescKey.Damage , "red" }, //µ¥¹ÌÁö »¡°£»ö
-        { EDescKey.AtkCount, "yellow" }, //°ø°İ È½¼ö ³ë¶õ»ö
-        { EDescKey.Armor, "#00FFFF"}, //¹æ¾îµµ ÆÄ¶õ»ö
-        { EDescKey.DrawCount, "#800080"}, //µå·Î¿ì ¼ö º¸¶ó»ö
-        { EDescKey.Heal, "green"}, //Èú·® ³ì»ö
-        { EDescKey.Cost, "orange"}, //Èú·® ³ì»ö
+        { EDescKey.Damage , "red" }, //ë°ë¯¸ì§€ ë¹¨ê°„ìƒ‰
+        { EDescKey.AtkCount, "yellow" }, //ê³µê²© íšŸìˆ˜ ë…¸ë€ìƒ‰
+        { EDescKey.Armor, "#00FFFF"}, //ë°©ì–´ë„ íŒŒë€ìƒ‰
+        { EDescKey.DrawCount, "#800080"}, //ë“œë¡œìš° ìˆ˜ ë³´ë¼ìƒ‰
+        { EDescKey.Heal, "green"}, //íëŸ‰ ë…¹ìƒ‰
+        { EDescKey.Cost, "orange"}, //íëŸ‰ ë…¹ìƒ‰
     };
 
 

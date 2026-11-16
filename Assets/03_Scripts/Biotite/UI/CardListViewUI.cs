@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-//µ¦ÀÇ Ä«µå Á¤º¸µéÀÌ³ª ¹¦ÁöÀÇ Ä«µå Á¤º¸µéÀ» º¸¿©ÁÖ´Â UI ÀÔ´Ï´Ù.
+//ë±ì˜ ì¹´ë“œ ì •ë³´ë“¤ì´ë‚˜ ë¬˜ì§€ì˜ ì¹´ë“œ ì •ë³´ë“¤ì„ ë³´ì—¬ì£¼ëŠ” UI ì…ë‹ˆë‹¤.
 public class CardListViewUI : MonoBehaviour
 {
     [SerializeField] private StaticCardUI cardListViewNodeUIPrefab;

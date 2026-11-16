@@ -25,7 +25,7 @@ public class CharacterSpawnUI : MonoBehaviour
         CardUtility.GetPartyFilterCards(
             Managers.Data.GetDataList<HeroCardData>(),
             Managers.Battle.Heroes
-        ); // ĳ���� ������ ������, ��Ƽ ī�� �����͸� ĳ���Ѵ�. (ĳ�̵� �����ʹ� ���� ���� �Ŀ��� �����ȴ�.)
+        ); // 캐릭터 생성이 끝나면, 파티 카드 데이터를 캐싱한다. (캐싱된 데이터는 게임 시작 후에 사용된다.)
 
         LoadManager.Instance.LoadScene(EScene.F0, () => {
             Managers.Game.GameStart();

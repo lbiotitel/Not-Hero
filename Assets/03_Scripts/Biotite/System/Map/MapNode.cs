@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-//¸Ê »ı¼º ³ëµå
+//ë§µ ìƒì„± ë…¸ë“œ
 public class MapNode
 {
     public Vector2Int mapPos;
@@ -12,11 +12,11 @@ public class MapNode
 
 public enum EMapNodeType
 {
-    None, //ºñ¾îÀÖÀ½
-    Battle, // ÀüÅõ
-    Event, //ÀÌº¥Æ®
-    Shop, //»óÁ¡
-    Boss, //º¸½º
-    Treasure,//º¸¹°
-    Rest //ÈŞ½Ä
+    None, //ë¹„ì–´ìˆìŒ
+    Battle, // ì „íˆ¬
+    Event, //ì´ë²¤íŠ¸
+    Shop, //ìƒì 
+    Boss, //ë³´ìŠ¤
+    Treasure,//ë³´ë¬¼
+    Rest //íœ´ì‹
 }

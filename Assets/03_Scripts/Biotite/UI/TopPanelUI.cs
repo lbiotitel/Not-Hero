@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 
 
-//È­¸é À§ÀÇ °ñµå³ª ÅÏ ¸Ê µî À§¿¡ ÀÖ´Â ¸ğµç UI¸¦ °øÅëÀ¸·Î °ü¸®ÇÕ´Ï´Ù.
+//í™”ë©´ ìœ„ì˜ ê³¨ë“œë‚˜ í„´ ë§µ ë“± ìœ„ì— ìˆëŠ” ëª¨ë“  UIë¥¼ ê³µí†µìœ¼ë¡œ ê´€ë¦¬í•©ë‹ˆë‹¤.
 public class TopPanelUI : MonoBehaviour, IEventListener
 {
     [Header("Buttons")]

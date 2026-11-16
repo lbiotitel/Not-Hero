@@ -9,7 +9,7 @@ public enum ESoundType
     Sfx
 }
 
-//ºê±İ, sfx Àç»ı ¹× °ü¸®
+//ë¸Œê¸ˆ, sfx ì¬ìƒ ë° ê´€ë¦¬
 public class SoundManager : MonoBehaviour, IEventListener
 {
     [SerializeField] private int sfxSourceCount;
@@ -68,7 +68,7 @@ public class SoundManager : MonoBehaviour, IEventListener
     }
 
 
-    //¿Àµğ¿À ¸®¼Ò½ºµé Ä³½Ì
+    //ì˜¤ë””ì˜¤ ë¦¬ì†ŒìŠ¤ë“¤ ìºì‹±
     private void LoadSoundResources()
     {
         List<AudioClip> resources = Managers.Data.GetDataList<AudioClip>();
@@ -80,7 +80,7 @@ public class SoundManager : MonoBehaviour, IEventListener
     }
 
 
-    //»ç¿îµå Àç»ı
+    //ì‚¬ìš´ë“œ ì¬ìƒ
     public void PlaySound(string soundName, bool loop = false, ESoundType soundType = ESoundType.Sfx)
     {
         if (soundName == null || soundName == string.Empty) return;
@@ -89,7 +89,7 @@ public class SoundManager : MonoBehaviour, IEventListener
         {
             if (!audioResources.ContainsKey(soundName))
             {
-                Debug.LogError($"µî·ÏµÇÁö ¾ÊÀº BGM: {soundName}");
+                Debug.LogError($"ë“±ë¡ë˜ì§€ ì•Šì€ BGM: {soundName}");
                 return;
             }
 
@@ -118,12 +118,12 @@ public class SoundManager : MonoBehaviour, IEventListener
             }
             else
             {
-                Debug.LogError("µî·ÏµÇÁö ¾Ê´Â SFX ÀÔ´Ï´Ù");
+                Debug.LogError("ë“±ë¡ë˜ì§€ ì•ŠëŠ” SFX ì…ë‹ˆë‹¤");
             }
         }
     }
 
-    //»ç¿îµå Á¤Áö
+    //ì‚¬ìš´ë“œ ì •ì§€
     public void StopSound(string soundName)
     {
         if (audioResources.ContainsKey(soundName))
@@ -134,7 +134,7 @@ public class SoundManager : MonoBehaviour, IEventListener
             }
             else
             {
-                Debug.LogError("Àç»ıµÇÁö ¾Ê°í ÀÖ´Â BGM ÀÔ´Ï´Ù");
+                Debug.LogError("ì¬ìƒë˜ì§€ ì•Šê³  ìˆëŠ” BGM ì…ë‹ˆë‹¤");
             }
         }
 
@@ -153,11 +153,11 @@ public class SoundManager : MonoBehaviour, IEventListener
         }
         else
         {
-            Debug.LogError("Àç»ıµÇÁö ¾Ê°í ÀÖ´Â sfx ÀÔ´Ï´Ù");
+            Debug.LogError("ì¬ìƒë˜ì§€ ì•Šê³  ìˆëŠ” sfx ì…ë‹ˆë‹¤");
         }
     }
 
-    //ºÒ·ı ¼³Á¤
+    //ë¶ˆë¥¨ ì„¤ì •
     public void SetVolume(ESoundType soundType, float volume)
     {
         if (soundType == ESoundType.Bgm)
@@ -206,7 +206,7 @@ public class SoundManager : MonoBehaviour, IEventListener
         fadeInOutCoroutine = null;
     }
 
-    //³ëµåÀÇ ¼±ÅÃ¿¡ µû¶ó bgm ÇÃ·¹ÀÌ
+    //ë…¸ë“œì˜ ì„ íƒì— ë”°ë¼ bgm í”Œë ˆì´
     public void OnEvent(EEventType eventType, object sender, object param = null)
     {
         switch (eventType)

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-//Ä«µå ±â´ÉÀÇ ºÎ¸ğÀÔ´Ï´Ù.
+//ì¹´ë“œ ê¸°ëŠ¥ì˜ ë¶€ëª¨ì…ë‹ˆë‹¤.
 [Serializable]
 public abstract class CardEffect
 {

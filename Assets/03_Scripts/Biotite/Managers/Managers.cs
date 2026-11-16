@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-//��� �Ŵ����� �����ϴ� ������ �Ŵ��� �Դϴ�.
+//모든 매니저를 관리하는 통합 매니저입니다.
 public class Managers : Singleton<Managers>
 {
 

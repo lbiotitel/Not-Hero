@@ -56,7 +56,7 @@ public class GameManager : MonoBehaviour
         TickTime();
     }
 
-    //�÷��� �ð��� �帨�ϴ�.
+    //플레이 시간을 흐르게 합니다.
     private void TickTime()
     {
         if (!gameStart) return;
